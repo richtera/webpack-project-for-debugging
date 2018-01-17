@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "env", {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 7"
+          ]
+        }
+      }
+    ],
+    "react",
+    "stage-3"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "check-es2015-constants",
+    "transform-react-jsx",
+    "transform-runtime",
+    "transform-flow-strip-types"
+  ]
+}

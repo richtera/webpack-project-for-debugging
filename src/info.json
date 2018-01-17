@@ -1,0 +1,37 @@
+{
+  "teach": {
+    "index": "teach/index.html",
+    "root": "teach/index.js",
+    "path": "/teach"
+  },
+  "login_app": {
+    "index": "login_app/index.html",
+    "root": "login_app/index.js",
+    "path": "/"
+  },
+  "create": {
+    "index": "create/index.html",
+    "root": "create/index.js",
+    "path": "/create"
+  },
+  "pimsleur": {
+    "index": "pimsleur/index.html",
+    "root": "pimsleur/index.js",
+    "path": "/pimsleur"
+  },
+  "learn": {
+    "index": "learn/index.html",
+    "root": "learn/index.js",
+    "path": "/learn"
+  },
+  "organize": {
+    "index": "organize/index.html",
+    "root": "organize/index.js",
+    "path": "/organize"
+  },
+  "manage": {
+    "index": "manage/index.html",
+    "root": "manage/index.js",
+    "path": "/manage"
+  }
+}

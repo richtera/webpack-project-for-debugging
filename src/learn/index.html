@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Version <%= htmlWebpackPlugin.options.window.version %> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta charset="utf-8" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/learn/apple-icon-57x57.png?v=2">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/learn/apple-icon-60x60.png?v=2">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/learn/apple-icon-72x72.png?v=2">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/learn/apple-icon-76x76.png?v=2">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/learn/apple-icon-114x114.png?v=2">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/learn/apple-icon-120x120.png?v=2">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/learn/apple-icon-144x144.png?v=2">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/learn/apple-icon-152x152.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/learn/apple-icon-180x180.png?v=2">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/learn/android-icon-192x192.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/learn/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/learn/favicon-96x96.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/learn/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/assets/learn/manifest.json?v=2">
+    <link rel="shortcut icon" href="/assets/learn/favicon.ico?v=2"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/learn/ms-icon-144x144.png?v=2">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript">
+      window.fb=<%= htmlWebpackPlugin.options.window.fb %>;
+      window.groups=<%= htmlWebpackPlugin.options.window.groups %>;
+      window.sc=<%= htmlWebpackPlugin.options.window.sc %>;
+      <%= htmlWebpackPlugin.options.window.head %>
+    </script>
+  </head>
+  <body>
+    <div id='root' class="learn-app">
+      <div class="loader-wrap">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+      </div>
+      <div class="text-loader">Loading&hellip;</div>  
+    </div>
+  </body>
+</html>
