@@ -118,6 +118,7 @@
     "stylelint-config-standard": "^18.0.0",
     "toastr": "^2.1.2",
     "ts-loader": "^3.1.0",
+    "uglifyjs-webpack-plugin": "1.x",
     "unzipper": "^0.8.9",
     "url-loader": "^0.6.2",
     "url-parse": "^1.2.0",

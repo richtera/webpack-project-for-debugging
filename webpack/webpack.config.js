@@ -15,6 +15,7 @@ const loaderUtils = require("loader-utils");
 const Watchpack = require("watchpack");
 const child_process = require("child_process");
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const wp = new Watchpack({
   // options:
@@ -506,15 +507,26 @@ e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4j
 
       if (process.env.NODE_ENV === 'production') {
         webpackConfig.plugins.push(
-          new Webpack.optimize.UglifyJsPlugin({
-            compressor: {
-              'screw_ie8': true,
-              'warnings': false,
-              'unused': true,
-              'dead_code': true,
-            },
-            sourceMap: true
+          new UglifyJsPlugin({
+            parallel: true,
+            sourceMap: true,
+            uglifyOptions: {
+              compress: {
+                global_defs: {
+                    "process.env.NODE_ENV": "production"
+                }
+              }
+            }
           })
+          // new Webpack.optimize.UglifyJsPlugin({
+          //   compressor: {
+          //     'screw_ie8': true,
+          //     'warnings': false,
+          //     'unused': true,
+          //     'dead_code': true,
+          //   },
+          //   sourceMap: true
+          // })
         );
       }
 
