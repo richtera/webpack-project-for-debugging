@@ -1,0 +1,3 @@
+[submodule "src/react-draft-wysiwyg"]
+	path = src/react-draft-wysiwyg
+	url = https://github.com/richtera/react-draft-wysiwyg.git
