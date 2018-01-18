@@ -14,11 +14,6 @@
     "root": "create/index.js",
     "path": "/create"
   },
-  "pimsleur": {
-    "index": "pimsleur/index.html",
-    "root": "pimsleur/index.js",
-    "path": "/pimsleur"
-  },
   "learn": {
     "index": "learn/index.html",
     "root": "learn/index.js",

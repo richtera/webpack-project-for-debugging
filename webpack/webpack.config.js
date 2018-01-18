@@ -236,7 +236,12 @@ e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4j
         modules: sassIncludePaths
       },
       plugins: infoPlugins.concat([
-        new Webpack.BannerPlugin('Openanesthesia Version ' + version),
+        new Webpack.optimize.CommonsChunkPlugin({
+          name: 'commons',
+          filename: !options.isProduction ? 'assets/js/commons.js' : 'assets/js/commons.[hash].js',
+          minChunks: 2
+        }),
+        new Webpack.BannerPlugin('Version ' + version),
         new Webpack.DefinePlugin({
           'process.env.TRAVIS_BRANCH': JSON.stringify(process.env.BRANCH || 'dev'),
           'process.env.RELEASE_ENV': JSON.stringify(version),
@@ -284,11 +289,7 @@ e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4j
         }, {
           from: 'src/assets',
           to: 'assets/'
-        }]),
-        new Webpack.optimize.CommonsChunkPlugin({
-          name: 'commons',
-          filename: !options.isProduction ? 'assets/js/commons.js' : 'assets/js/commons.[hash].js'
-        })
+        }])
       ]),
       module: {
         loaders: [
