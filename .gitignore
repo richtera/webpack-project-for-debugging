@@ -4,7 +4,6 @@ npm-debug.log
 dist
 .idea
 yarn-error.log
-VERSION.*
 tools/pods/*
 *.iml
 /speech
