@@ -20,3 +20,4 @@ dump*
 *.txt
 /secrets
 /yarn-cache
+VERSION.txt
