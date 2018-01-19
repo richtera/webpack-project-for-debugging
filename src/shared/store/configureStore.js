@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import {List, Map, Set, OrderedMap} from 'immutable';
-import ReactLoading from 'react-loading';
+//import ReactLoading from 'react-loading/lib/react-loading';
 
 // Setup what we need of the rxjs system.
 import { Observable } from 'rxjs/Observable';

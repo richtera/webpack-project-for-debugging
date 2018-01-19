@@ -9,7 +9,7 @@
 // import moment from 'moment';
 // import _ from 'lodash';
 // import { Sparklines, SparklinesLine } from 'react-sparklines';
-// import ReactLoading from 'react-loading';
+// import ReactLoading from 'react-loading/lib/react-loading';
 // import { FormControl, Checkbox, FormGroup, Button, Navbar, Nav, NavItem , Header } from 'components/bootstrap';
 // import { Map, List, OrderedMap, Set, fromJS } from 'immutable';
 // import { SearchBox, RefinementListFilter, Hits, HitsStats, SearchkitComponent, SelectedFilters,
