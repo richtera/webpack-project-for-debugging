@@ -219,6 +219,9 @@ e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4j
     ];
     const webpackConfig = {
       name: 'app',
+      node: {
+        process: false
+      },
       devtool: options.devtool,
       entry: infoEntry,
       output: !options.isProduction ? {
